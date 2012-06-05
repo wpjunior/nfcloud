@@ -7,7 +7,7 @@ from django.conf.urls import patterns, include, url
 urlpatterns = patterns('',
     # Examples:
     # url(r'^$', 'nfcloud.views.home', name='home'),
-    # url(r'^nfcloud/', include('nfcloud.foo.urls')),
+    url(r'^dashboard/', include('nfcloud.apps.dashboard.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
