@@ -19,6 +19,7 @@ class Nfe(models.Model):
 
     observacao = models.TextField()
 
+    """
     valor_total = models.DecimalField()
     valor_deducoes = models.DecimalField()
     base_calculo = models.DecimalField()
@@ -36,3 +37,4 @@ class Nfe(models.Model):
 
     credito = models.DecimalField()
     cofins = models.DecimalField()
+    """
