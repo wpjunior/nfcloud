@@ -1,0 +1,508 @@
+.base{ color: #626262;font-family: "Droid Sans", Helvetica, arial, sans-serif;font-size: 12px; }
+
+.fnormal{
+    width: 456px;
+}
+.flarge{
+    width: 750px;
+}
+
+.fleft{
+    float:left;
+}
+.fright{
+    float:right;
+}
+.fcenter {
+    margin: 18px auto 0px auto;
+}
+.pcenter {
+    text-align: center;
+}
+.fclean{
+/* usado para preencher em banco espaco de um input */
+    width: 456px;
+    padding-bottom: 55px;
+}
+
+#header hgroup{
+    margin: 0 0 5px 5px;
+}
+
+#header hgroup #title{
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, .5);  
+    -webkit-font-smoothing: antialiased;
+    margin: 0 0 0 5px; 
+    font-size: 1.5em;
+}
+
+#title img { position: relative; top: 3px; }
+
+#header hgroup #icon{
+    position: relative; top: 6px;
+}
+
+#header hgroup #required{
+    font-size: smaller;
+    float: right;
+    color: #fff;
+}
+
+.ftraco{
+    background: #bcbcbc;
+    margin: 2px 0px 5px 1px;
+    height: 1px;
+    border-bottom-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+
+.base #main{
+    background-color: #eeeeec;
+    background-color: rgba(238, 238, 236, 0.75);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .25);
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .25);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .25);
+    margin: 5px 0 0 0;
+    padding: 10px 20px 20px 20px;
+    
+    position: relative; border:1px solid #777;
+    border-radius:6px;-moz-border-radius: 6px;-webkit-border-radius: 6px;-moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);-webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+    .base #main:before, .base #main:after {position: absolute;width: 40%;height: 10px;content: ' ';left: 12px;bottom: 12px;background: transparent;-webkit-transform: skew(-5deg) rotate(-5deg);-moz-transform: skew(-5deg) rotate(-5deg);-ms-transform: skew(-5deg) rotate(-5deg);-o-transform: skew(-5deg) rotate(-5deg);transform: skew(-5deg) rotate(-5deg);-webkit-box-shadow: 0 10px 12px rgba(0, 0, 0, 0.5);-moz-box-shadow: 0 10px 12px rgba(0, 0, 0, 0.5);box-shadow: 0 10px 12px rgba(0, 0, 0, 0.5);z-index: -1;}
+    .base #main:after {left: auto;right: 12px;-webkit-transform: skew(5deg) rotate(5deg);-moz-transform: skew(5deg) rotate(5deg);-ms-transform: skew(5deg) rotate(5deg);-o-transform: skew(5deg) rotate(5deg);transform: skew(5deg) rotate(5deg);}
+
+
+.help{
+    margin-left: 10px;
+}
+/* ------------------------------------------- */
+  /* = inicio dos text inputs & text areas
+---------------------------------------------- */
+table.fields input.tiny {width: 130px !important;}
+input.search-text {width: 365px !important;}
+.base p, div.field {
+    margin: 0 0 12px 0;
+    line-height: 20px;
+}
+
+.base label small {
+    color: #a7a7a7;
+    font-size: 10px;
+    font-weight: normal;
+    margin: 0 0 0 8px;
+}
+
+.base label + input[type='text'], label + input[type='password'], label + input[type='email'], label + textarea, label + select, label + small + input[type='text'], label + img + input[type='text'], label + input[type='number'] {
+    display: block;
+    margin: 4px 0 0 0;
+  }
+
+/* colocando tamanho fixo do input de acordo com o tamanho do form */
+.base.fnormal input[type='text'],.base.fnormal input[type='password'],.base.fnormal label.error, .base.fnormal input[type='email'],.base.fnormal textarea {
+    width: 394px;
+}
+.base.flarge input[type='text'],.base.flarge input[type='password'],.base.flarge label.error,.base.flarge input[type='email'],.base.flarge textarea,.base.flarge.formsetfield input[type='text'] {
+    width: 430px;
+}
+
+#main .tel { width: 110px;}
+#main .hasDatepicker { width: 90px;}
+#main .cpf {width: 120px;}
+
+.base input[type='text'],.base input[type='password'],.base input[type='email'],.base textarea,
+.base input[type='number'], .formsetfield input[type='text']{
+    border: 1px solid #ccc;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .15) inset;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .15) inset; box-shadow:
+    -0 1px 2px rgba(0, 0, 0, .15) inset;
+    color: #424242;
+    font-family: Verdana, 'Helvetica Neue', Helvetica, Arial, Geneva, sans-serif;
+    font-size: 13px;
+    outline: none;
+    padding: 6px;
+    -moz-transition: border .3s linear, box-shadow .3s linear;
+    -webkit-transition: border .3s linear, -webkit-box-shadow .3s linear;
+}
+
+.base input[type='text']:focus,.base input[type='password']:focus,.base input[type='email']:focus,.base textarea:focus, .formsetfield input[type='text']:focus {
+    border: 1px solid #80bfff;
+    -moz-box-shadow: 0 0 3px #80bfff, 0 1px 2px rgba(0, 0, 0, .15) inset;
+    -webkit-box-shadow: 0 0 3px #80bfff, 0 1px 2px rgba(0, 0, 0, .15) inset;
+    box-shadow: 0 0 3px #80bfff, 0 1px 2px rgba(0, 0, 0, .15) inset;
+}
+
+input[type='text'].error, input[type='password'].error,input[type='email'].error, textarea{
+    border: 1px solid #cc0000;
+    -moz-box-shadow: 0 0 3px #cc0000, 0 1px 2px rgba(0, 0, 0, .15) inset;
+    -webkit-box-shadow: 0 0 3px #cc0000, 0 1px 2px rgba(0, 0, 0, .15) inset;
+    box-shadow: 0 0 3px #cc0000, 0 1px 2px rgba(0, 0, 0, .15) inset;
+}
+
+.inline-perror input[type='text'],
+.inline-perror input[type='password'],
+.inline-perror input[type='email'],
+.inline-perror textarea{
+    border: 1px solid #cc0000 !important;
+    -moz-box-shadow: 0 0 3px #cc0000, 0 1px 2px rgba(0, 0, 0, .15) inset !important;
+    -webkit-box-shadow: 0 0 3px #cc0000, 0 1px 2px rgba(0, 0, 0, .15) inset !important;
+    box-shadow: 0 0 3px #cc0000, 0 1px 2px rgba(0, 0, 0, .15) inset !important;
+}
+
+/* css para colocar input estado em maiusculas. id_0-estado é quando ele estiver em um wizard */
+#id_estado, #id_0-estado {
+    text-transform:uppercase;
+}
+/* css para colocar inputs pequenos como numeros, complementos, estados, ceps */
+/* esses campos devem ser sempre alinhados a esquerda */
+.base.flarge .tiny input[type='text'], .base.flarge .tiny label{
+    width: 25px;
+}
+.base.flarge .tinym input[type='text'], .base.flarge .tinym label{
+    width: 90px;
+    margin-left: 22px;
+}
+.base.flarge .tinyl input[type='text'], .base.flarge .tinyl label{
+    width: 270px;
+    margin-left: 22px;
+}
+
+/* ------------------------------------------- */
+/* = inicio dos buttons
+---------------------------------------------- */
+  
+.base a.button:link,
+  a.button:visited,
+  button,
+  input[type='button'],
+  input[type='submit'] {
+    background: #eaeaea;
+    background: -moz-linear-gradient(top, #efefef, #d8d8d8) #d8d8d8;
+    background: -webkit-gradient(linear, left top, left bottom, from(#efefef), to(#d8d8d8)) #d8d8d8;
+    background: linear-gradient(top, #efefef, #d8d8d8) #d8d8d8;
+    border: 1px solid #ababab;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .1), 0 1px 1px rgba(255, 255, 255, .8) inset;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .1), 0 1px 1px rgba(255, 255, 255, .8) inset;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .1), 0 1px 1px rgba(255, 255, 255, .8) inset;
+    color: #707070;
+    font-family: 'Helvetica Neue', Helvetica, Arial, Geneva, sans-serif;
+    font-size: 12px;
+    -webkit-font-smoothing: antialiased;
+    font-weight: bold;
+    margin: 0;
+    outline: none;
+    padding: .4em 1em;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, .5);
+    text-decoration: none;
+  }
+  
+.base a.button:focus,
+  button:focus,
+  input[type='button']:focus,
+  input[type='submit']:focus {
+    background: -moz-linear-gradient(top, #f6f6f6, #e3e3e3) #e3e3e3;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f6f6f6), to(#e3e3e3)) #e3e3e3;
+    background: linear-gradient(top, #f6f6f6, #e3e3e3) #e3e3e3;
+    border: 1px solid #80bfff;
+    -moz-box-shadow: 0 0 3px #80bfff, 0 1px 1px rgba(255, 255, 255, .8) inset;
+    -webkit-box-shadow: 0 0 3px #80bfff, 0 1px 1px rgba(255, 255, 255, .8) inset;
+    box-shadow: 0 0 3px #80bfff, 0 1px 1px rgba(255, 255, 255, .8) inset;
+  }
+
+.base a.button:active,
+  a.button.active,
+  button:active,
+  button.active,
+  input[type='button']:active,
+  input[type='button'].active,
+  input[type='submit']:active,
+  input[type='submit'].active {
+    background: #e3e3e3;
+    background: -moz-linear-gradient(top, #e3e3e3, #f6f6f6) #1b468f;
+    background: -webkit-gradient(linear, left top, left bottom, from(#e3e3e3), to(#f6f6f6)) #1b468f;
+    background: linear-gradient(top, #e3e3e3, #f6f6f6) #1b468f;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.base a.button:hover,
+  button:hover,
+  input[type='button']:hover,
+  input[type='submit']:hover {
+    background: #f1f1f1;
+    background: -moz-linear-gradient(top, #f6f6f6, #e3e3e3) #e3e3e3;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f6f6f6), to(#e3e3e3)) #e3e3e3;
+    background: linear-gradient(top, #f6f6f6, #e3e3e3) #e3e3e3;
+    cursor: pointer;
+}
+
+.base a.button:active,
+  a.button.active,
+  button:active,
+  button.active,
+  input[type='button']:active,
+  input[type='button'].active,
+  input[type='submit']:active,
+  input[type='submit'].active {
+    background: #e3e3e3;
+    background: -moz-linear-gradient(top, #e3e3e3, #f6f6f6) #1b468f;
+    background: -webkit-gradient(linear, left top, left bottom, from(#e3e3e3), to(#f6f6f6)) #1b468f;
+    background: linear-gradient(top, #e3e3e3, #f6f6f6) #1b468f;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+a.button.disabled,
+  button:disabled,
+  input[type='button']:disabled,
+  input[type='submit']:disabled {
+    background: #efefef !important;
+    border: 1px solid #d1d1d1 !important;
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    color: #aaa !important;
+    cursor: default;
+    text-shadow: 0 1px 1px #fff !important;
+}
+
+/* ----------------------------------------------
+= customização para bottons green
+---------------------------------------------- */
+.base a.button.green:link,
+    a.button.green:visited,
+    button.green,
+    input[type='button'].green,
+    input[type='submit'].green {
+      background: #1fbf00;
+      background: -moz-linear-gradient(top, #22d100, #19a500) #22d100;
+      background: -webkit-gradient(linear, left top, left bottom, from(#22d100), to(#19a500)) #22d100;
+      background: linear-gradient(top, #22d100, #19a500) #22d100;
+      border: 1px solid #1b8800;
+      -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .1), 0 1px 1px rgba(255, 255, 255, .25) inset;
+      -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .1), 0 1px 1px rgba(255, 255, 255, .25) inset;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, .1), 0 1px 1px rgba(255, 255, 255, .25) inset;
+      color: #fff;
+      text-shadow: 0 -1px 1px rgba(0, 0, 0, .33);
+}
+
+.base a.button.green:hover,
+    button.green:hover,
+    input[type='button'].green:hover,
+    input[type='submit'].green:hover {
+      background: #22cc00;
+      background: -moz-linear-gradient(top, #24d800, #1db200) #24d800;
+      background: -webkit-gradient(linear, left top, left bottom, from(#24d800), to(#1db200)) #24d800;
+      background: linear-gradient(top, #24d800, #1db200) #24d800;
+}
+
+.base a.button.green:focus,
+    button.green:focus,
+    input[type='button'].green:focus,
+    input[type='submit'].green:focus {
+      -moz-box-shadow: 0 0 3px #24d800, 0 1px 1px rgba(255, 255, 255, .25) inset;
+      -webkit-box-shadow: 0 0 3px #24d800, 0 1px 1px rgba(255, 255, 255, .25) inset;
+      box-shadow: 0 0 3px #24d800, 0 1px 1px rgba(255, 255, 255, .25) inset;
+}
+
+.base a.button.green:active,
+    a.button.green.active,
+    button.green:active,
+    input[type='button'].green:active,
+    input[type='submit'].green:active {
+      background: #1fba00;
+      background: -moz-linear-gradient(top, #1db200, #24d800) #1db200;
+      background: -webkit-gradient(linear, left top, left bottom, from(#1db200), to(#24d800)) #1db200;
+      background: linear-gradient(top, #1db200, #224d800) #1db200;
+      -moz-box-shadow: none;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+}
+
+.base a.button.red:link,
+    a.button.red:visited,
+    button.red,
+    input[type='button'].red,
+    input[type='submit'].red {
+      background: #bf001b;
+      background: -moz-linear-gradient(top, #d10027, #a5002b) #d10027;
+      background: -webkit-gradient(linear, left top, left bottom, from(#d10027), to(#a5002b)) #d10027;
+      background: linear-gradient(top, #d10027, #a5002b) #d10027;
+      border: 1px solid #880023;
+      -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .1), 0 1px 1px rgba(255, 255, 255, .25) inset;
+      -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .1), 0 1px 1px rgba(255, 255, 255, .25) inset;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, .1), 0 1px 1px rgba(255, 255, 255, .25) inset;
+      color: #fff;
+      text-shadow: 0 -1px 1px rgba(0, 0, 0, .33);
+}
+
+.base a.button.red:hover,
+    button.red:hover,
+    input[type='button'].red:hover,
+    input[type='submit'].red:hover {
+      background: #cc000e;
+      background: -moz-linear-gradient(top, #d8000a, #b2000d) #d8000a;
+      background: -webkit-gradient(linear, left top, left bottom, from(#d8000a), to(#b2000d)) #d8000a;
+      background: linear-gradient(top, #d8000a, #b2000d) #d8000a;
+}
+
+.base a.button.red:focus,
+    button.red:focus,
+    input[type='button'].red:focus,
+    input[type='submit'].red:focus {
+      -moz-box-shadow: 0 0 3px #d8000a, 0 1px 1px rgba(255, 255, 255, .25) inset;
+      -webkit-box-shadow: 0 0 3px #d8000a, 0 1px 1px rgba(255, 255, 255, .25) inset;
+      box-shadow: 0 0 3px #d8000a, 0 1px 1px rgba(255, 255, 255, .25) inset;
+}
+
+.base a.button.red:active,
+    a.button.red.active,
+    button.red:active,
+    input[type='button'].red:active,
+    input[type='submit'].red:active {
+      background: #1fba00;
+      background: -moz-linear-gradient(top, #b2000d, #d8000a) #b2000d;
+      background: -webkit-gradient(linear, left top, left bottom, from(#b2000d), to(#d8000a)) #b2000d;
+      background: linear-gradient(top, #b2000d, #d8000a) #b2000d;
+      -moz-box-shadow: none;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+}
+
+input.date {width: 75px;}
+
+
+/* ------------------------------------------- */
+/* =segmented radio buton para pessoa fisica e juridica
+---------------------------------------------- */
+.segmented {
+  list-style: none;
+  display: block;
+  padding: 0px 0px 2px 0px;
+  margin: 10px 2px;
+}
+.segmented:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+
+}
+
+.segmented li {
+  float: left;
+}
+
+.segmented ul {
+    list-style: none;
+}
+
+
+.segmented li a.button:link,
+.segmented li a.button:visited,
+.segmented li button,
+.segmented li input[type='submit'] {
+  border-right: none;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+
+.segmented li:first-child a.button:link,
+.segmented li:first-child a.button:visited,
+.segmented li:first-child button,
+.segmented li:first-child input[type='submit'] {
+  -moz-border-radius-bottomleft: 3px;
+  -moz-border-radius-topleft: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -webkit-border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+}
+
+.segmented li:last-child a.button:link,
+.segmented li:last-child a.button:visited,
+.segmented li:last-child button,
+.segmented li:last-child input[type='submit'] {
+  border-right: 1px solid #ababab;
+  -moz-border-radius-bottomright: 3px;
+  -moz-border-radius-topright: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -webkit-border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+}
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+
+input[type="number"].tinyfield {
+    width: 50px !important;
+    display: inline-block !important;
+}
+input[type="text"].money {
+    width: 110px !important;
+}
+
+div.error p {color: red;}
+
+
+.inline-formfield {
+    border: 1px solid #eeeeec;
+    margin-bottom: 25px;
+    padding: 5px;
+    width: 450px;
+}
+.fieldset {
+    margin-bottom: 15px;
+}
+
+#album {
+   float: right; 
+   width: 180px;
+   margin: 0 4% 4% 0; 
+   position: relative; 
+   z-index: 10;
+}
+#album img { 
+    max-width: 100%; 
+    height: auto; 
+    vertical-align: bottom; 
+    border: 10px solid #fff; 
+    border-radius: 3px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+#photo { float: right; margin-top: -55px; }
+#photo-view img {
+    border: 1px solid #CCC;
+    padding: 5px;
+    border-spacing: 2px;
+    width: 160px;
+    margin-bottom: 15px;
+}
+
+/* customizando o formsetfield do lethusbox para o botão adicionar
+    ficar alinhado corretamente no rodape */
+.ui-widget-content { padding-bottom: 15px; }
+#todayviewbox .ui-widget-content { padding-bottom: 0px; }
+a.add-row { position: relative; top: 10px;}
