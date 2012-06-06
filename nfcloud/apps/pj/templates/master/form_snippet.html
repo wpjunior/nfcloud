@@ -1,0 +1,9 @@
+{% include "master/message.error.html" %}
+{% csrf_token %}
+{% for field in form %}
+
+<div id="field-{{ field.name }}" class="field{% if field.errors %} perror{% endif %}{% if field.field.required %} required{% endif %}">
+ {{ field.label_tag }}  {% if field.field.required %}*{% endif %}  {% if field.help_text %}<img src='{{STATIC_URL}}/img/icon/help.png' class='tooltip help' title='{{ field.help_text }}'/>{% endif %}
+  {{field}}
+</div>
+{% endfor %}

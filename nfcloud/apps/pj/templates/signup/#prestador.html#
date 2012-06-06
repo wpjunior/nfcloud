@@ -1,0 +1,42 @@
+{% extends "site/base.html" %}
+
+{% block header %}
+<script type="text/javascript" src="{{ STATIC_URL }}js/jquery.maskedinput.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}js/jquery.validate.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}js/jquery.validate.ptbr.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}js/municipio.select.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}js/signup.prestatores.js"></script>
+<script type="text/javascript">
+  
+</script>
+<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/form.css"/>
+<style type="text/css">
+  #id_cnpj {width: 140px}
+  #id_cep {width: 80px}
+  #id_fone1, #id_fone2 {width: 110px}
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="base flarge fcenter">
+  <header id="header">
+    <hgroup>
+      <span id="icon"><img src="{{ STATIC_URL }}img/menu/user.png" alt="usuario"></span>
+      <span id="title">
+        <strong>Cadastro de Prestadores</strong>
+      </span>
+    </hgroup>
+  </header>
+  <section id="main">
+    <form id="form" method="POST">
+      <p>
+        <input type="button" value="Voltar" onclick="history.go(-1)">
+        <span class="fright">
+          <input type="submit" value="Salvar" class="green">
+        </span>
+      </p>
+      {% include "master/form_snippet.html" %}
+    </form>
+  </section>
+</div>
+{% endblock %}
