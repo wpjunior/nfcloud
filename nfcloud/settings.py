@@ -120,6 +120,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'nfcloud.common',
     'nfcloud.common.municipios',
+    'nfcloud.apps.pj',
     'nfcloud.apps.nfe',
     'nfcloud.apps.dashboard',
     # Uncomment the next line to enable the admin:
